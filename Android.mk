@@ -3,6 +3,8 @@
 
 my_path := $(call my-dir)
 
+SUPERUSER_EMBEDDED := true
+
 ifdef SUPERUSER_EMBEDDED
 SUPERUSER_PACKAGE := com.android.settings
 else
